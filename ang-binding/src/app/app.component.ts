@@ -8,8 +8,15 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
   nome = 'João';
+  adicionado = false;
+  funcionarios = [];
+  ultimoId = 0;
 
   adicionar() {
-    this.nome = this.nome + Math.round(Math.random() * 100);
+    this.adicionado = true;
+    this.funcionarios.push({
+      id: ++this.ultimoId,
+      nome: this.nome
+    });
   }
 }
