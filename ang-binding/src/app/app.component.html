@@ -5,9 +5,9 @@
 
   <div class="form-group">
     <label>Nome</label>
-    <input type="text" class="form-control" #nomeInput [value]="nome" (input)="alterarNome($event)">
+    <input type="text" class="form-control" [(ngModel)]="nome">
   </div>
 
   <button type="button" class="btn btn-primary"
-  (click)="adicionar(nomeInput.value)" [disabled]="nome.length == 0">Salvar</button>
+  (click)="adicionar()" [disabled]="nome.length == 0">Salvar</button>
 </div>
