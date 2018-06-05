@@ -5,9 +5,9 @@
 
   <div class="form-group">
     <label>Nome</label>
-    <input type="text" class="form-control" #nomeInput>
+    <input type="text" class="form-control" #nomeInput [value]="nome" (input)="alterarNome($event)">
   </div>
 
   <button type="button" class="btn btn-primary"
-  (click)="adicionar(nomeInput.value)">Salvar</button>
+  (click)="adicionar(nomeInput.value)" [disabled]="nome.length == 0">Salvar</button>
 </div>
