@@ -1,0 +1,17 @@
+<main>
+  <app-navbar></app-navbar>
+  <header>
+    <div class="sidebar  js-sidebar" [hidden]="!exibindoMenu">
+      <app-aside-nav *ngIf="exibindoMenu"></app-aside-nav>
+    </div>
+  </header>
+  <section class="content js-content padding">
+    <div class="card ui-shadow">
+        <app-form-cadastrado></app-form-cadastrado>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <app-footer></app-footer>
+</footer>

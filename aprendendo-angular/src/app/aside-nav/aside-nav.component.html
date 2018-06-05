@@ -1,0 +1,55 @@
+<aside class="sidebar  js-sidebar ">
+  <nav class="menu">
+    <div id='cssmenu'>
+
+      <ul [hidden]="!exibindoMenu">
+        <li>
+          <a href="/home">
+            <i class="fa fa-fw fa-home"></i>
+            Início
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <i class="fa fa-fw fa-bell"></i>
+            Notificações
+          </a>
+        </li>
+
+        <li class="has-sub">
+          <a href="">
+            <i class="fa  fa-fw  fa-desktop"></i>
+            Cadastrar
+            <i class="fa  fa-fw  fa-angle-down right"></i>
+          </a>
+
+          <ul>
+
+
+            <li>
+              <a href="/cad/atividade">
+                <i class="fa fa-fw fa-cubes"></i>
+                Atividade
+              </a>
+            </li>
+
+            <li jsf:rendered="#{seguranca.cadastrarCargo}">
+              <a href="/cad/cargo">
+                <i class="fa fa-fw  fa-certificate"></i>
+                Cargo
+              </a>
+            </li>
+
+            <li>
+              <a href="/cad/categoria">
+                <i class="fa fa-fw  fa-sitemap"></i>
+                Categoria
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</aside>

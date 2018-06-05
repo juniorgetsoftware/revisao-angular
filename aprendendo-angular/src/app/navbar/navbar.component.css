@@ -1,0 +1,21 @@
+.navbar {
+  padding: 20px 10px;
+  color: white;
+  background-color: #1e94d2;
+  font-family: 'Roboto', 'Arial';
+  font-weight: bold;
+  margin: 0;
+}
+
+.topbar-menu {
+  /*display: inline-block;*/
+  list-style-type: none;
+  float: right;
+  margin: 0 60px 0 0;
+  padding: 0;
+  height: 100%;
+}
+
+#layout-topbar {
+  width: 100%;
+}

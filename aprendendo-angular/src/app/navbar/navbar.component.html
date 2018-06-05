@@ -1,0 +1,45 @@
+<header class="topbar">
+  <nav id="layout-topbar">
+
+    <div class="logo">
+      <i class="fa fw fa-cloud"></i>
+      {{ logo }}
+    </div>
+
+    <ul id="top-menu" class="ShowOnDesktop">
+      <li>
+        <a>
+          <i class="fa fa-certificate"></i>
+          GET STARTED
+        </a>
+      </li>
+
+      <li>
+        <a>
+          <i class="fa fa-cubes"></i>
+          THEMES</a>
+      </li>
+
+      <li>
+        <a>
+          <i class="fa fa-book"></i>
+          SUPPORT
+        </a>
+      </li>
+
+      <li>
+        <a href="javascript:;" class="js-toggle" (click)="exibindoMenu = !exibindoMenu">
+          <i class="fa fa-navicon"></i>
+        </a>
+      </li>
+    </ul>
+
+    <ul id="top-menu" class="ShowOnMobile">
+      <li>
+        <a href="javascript:;" class="js-toggle" (click)="exibindoMenu = !exibindoMenu">
+          <i class="fa fa-navicon"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>

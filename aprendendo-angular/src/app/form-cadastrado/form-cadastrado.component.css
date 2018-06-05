@@ -1,0 +1,32 @@
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: bold;
+  color: #333333;
+}
+
+h4.espaco {
+  margin-bottom: 10px !important;
+}
+
+.link-rapido {
+  float: right;
+  font-size: 20px;
+  color: #333333;
+  margin-top: 10px;
+}
+
+.link-rapido a {
+  background: #f1f1f1;
+  margin-left: 25px;
+  padding: 10px;
+  border-radius: 15%;
+}
+
+.link-rapido a:hover {
+  background: #e6e6e6;
+}
+
+.link-rapido a .ultimo {
+  margin-right: 0px !important;
+}
