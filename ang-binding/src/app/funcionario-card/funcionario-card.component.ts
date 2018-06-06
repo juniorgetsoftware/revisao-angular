@@ -14,4 +14,13 @@ export class FuncionarioCardComponent implements OnInit {
   ngOnInit() {
   }
 
+  getStilosCartao() {
+    return {
+      backgroundColor : this.funcionario.id % 2 === 0 ? 'lightblue' : 'lightgreen'
+    };
+  }
+
+  isAdmin() {
+    return this.funcionario.nome.startsWith('T');
+  }
 }
